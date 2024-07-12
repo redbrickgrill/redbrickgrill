@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    background-image: url('img/RiCk.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño completo del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px; /* Ajusta esta altura según sea necesario */
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2; /* Para asegurar que esté por encima del carrusel */
+}
+
+h1 {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 5em; /* Ajusta el tamaño según tus necesidades */
+    color: white;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Para mantener la proporción de la imagen */
+    max-width: 1000px; /* Ajusta el tamaño máximo según tu diseño */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformarse */
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 100px; /* Espacio arriba del carrusel */
+    padding: 20px; /* Espaciado interno para dispositivos más pequeños */
+    z-index: 1; /* Para asegurar que esté detrás del encabezado */
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap; /* Ajuste para envolver las tarjetas en dispositivos pequeños */
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    width: 100%;
+}
+
+.card {
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s;
+    width: calc(33.33% - 20px); /* Para mostrar 3 tarjetas por fila en dispositivos grandes */
+    max-width: 300px; /* Ancho máximo de las tarjetas */
+    flex-shrink: 0; /* Evitar que las tarjetas se encojan */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card .info {
+    padding: 10px 0;
+}
+
+.carousel-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-btn:hover {
+    background-color: #0056b3;
+}
+
+.prev {
+    left: -40px;
+}
+
+.next {
+    right: -40px;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        flex-direction: column; /* Cambiar a columna en dispositivos más pequeños */
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; /* Tarjetas ocupan todo el ancho en dispositivos pequeños */
+        max-width: none;
+    }
+}
