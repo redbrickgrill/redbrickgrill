@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reserva</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styleReserv.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Redbrick</h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#">Inicio</a>
+                    <a href="#eventos">Eventos</a>
+                    <a href="menuPhoto.html">Menú</a>
+                    <a href="https://www.facebook.com/redbrickgrill">Comunidad</a>
+                    <a href="#formulario">Reserva</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>   
+    <div class="contenido-header">
+        <div class="contenedor-encabezado video-container">
+            <div class="texto-encabezado">
+                <h2>Eventos, reservas y buena comida</h2>
+                <a href="menuPhoto.html" class="btn bordes">Menú</a>
+            </div>
+            <video autoplay loop muted>
+                <source src="Diseño sin título.mp4">
+            </video>
+        </div>
+    </div>
+    
+    <section class="menu contenedor" id="eventos">
+        <h2 class="texto-platillos">Novedades!!</h2>
+        <div class="botones-platillos">
+            <button class="ensaladas btn btn-verde">Eventos</button>
+            <button class="pasta btn btn-verde">Combos</button>
+        </div>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <h2>Promocionate</h2>
+                <p>¿Tienes un evento en puerta? llamanos</p>
+                <div class="precio">
+                    <p> EVENTO</p>
+                    <a href="#formulario" class="canasta"><i class="fas fa-phone-alt"></i></i></a>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <h2>Sabado de cerveza</h2>
+                <p>1 Cubeta + nachos especiales o carne saca</p>
+                <div class="precio">
+                    <p>PROMOCION $265</p>
+                    <a href="#formulario" class="canasta"><i class="fas fa-shopping-basket"></i></a>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <h2>Viernes caguamero</h2>
+                <p>Todas las caguamas a $70</p>
+                <div class="precio">
+                    <p>PROMOCION</p>
+                    <a href="#formulario" class="canasta"><i class="fas fa-shopping-basket"></i></a>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <h2>Hora feliz todos los días</h2>
+                <p>Todas las burger a $89</p>
+                <div class="precio">
+                    <p>DIARIO</p>
+                    <a href="#formulario" class="canasta"><i class="fas fa-shopping-basket"></i></a>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>Nachos en pareja</h2>
+                <p>Una orden GRANDE de nachos + 2 bebidas de sabor.</p>
+                <div class="precio">
+                    <p>Combo $185</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>Dogos en pareja</h2>
+                <p>2 Dogos +  2 bebidas de sabor</p>
+                <div class="precio">
+                    <p>Combo $270</p>
+                        <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>Felices por siempre</h2>
+                <p>2 Perronas + 2 candiles + nachos especiales</p>
+                <div class="precio">
+                    <p>Combo $390</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>Americano</h2>
+                <p>3 Groseras + 3 candiles + 1 orden de papas regias.</p>
+                <div class="precio">
+                    <p>Combo $500</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>GOOOLASOO</h2>
+                <p>2 Papanachos + 3 Chillidogos + 3 caguamas</p>
+                <div class="precio">
+                    <p>Combo $600</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>El divorcio </h2>
+                <p>1 Tóxica + 1 Toxico + 2 té elado</p>
+                <div class="precio">
+                    <p>Combo $270</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>El cubetas</h2>
+                <p>2 Cubetas premium + nachos especiales</p>
+                <div class="precio">
+                    <p>Combo $370</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="platillo" data-platillo="pasta">
+                <h2>SABROSO</h2>
+                <p>2 Donaburger + 2 cervezas</p>
+                <div class="precio">
+                    <p>Platillo $265</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separador separador-fondo">
+        <div class="contenido-separador contenedor">
+            <h2>RedBrick alegra tu día!!</h2>
+            <p>Empieza a ordenar tu comida y disfruta del buen sazón</p>
+            <a href="https://www.ubereats.com/mx/store/red-brick/owCtCA9jRUmCw4DPi29Glg?diningMode=DELIVERY" class="btn btn-verde">
+                <i style="font-size:24px" class="fa">&#xf1ba;</i> Ordenar ahora
+            </a>
+        </div>
+    </div>
+    <section class="chef contenedor">
+        <h2>Ahora puedes ser miembro!!!</h2>
+        <div class="contenido-chef">
+            <div class="texto-chef">
+                <h3>El sabor y sazón de nuestra cocina es un privilegio</h3>
+                <p>Puedes ser parte de este privilegio teniendo promociones y descuentos exclusivos</p>
+            </div>
+        </div>  
+        <a href="https://maps.app.goo.gl/vQ7u6iP1PMp4vf7VA" class="btn btn-verde">Visítanos</a>
+    </section>
+    
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto">
+            <h3>RESERVACIONES</h3>
+            <p><i class="fas fa-map-marker-alt"></i>RedBrick</p>
+            <p><i class="fas fa-envelope"></i>Redbrick.clientes@gmail.com   </p>
+            <p><i class="fas fa-phone-alt"></i>614 354 0713</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <form class="formulario" id="formulario" action="https://formspree.io/f/mrgnoryw" method="POST">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Inserte su nombre aqui..." id="nombre" name="nombre" required>
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="Inserte su apellido aqui..." id="apellidos" name="apellidos" required>
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Hora de llegada</label>
+                <input type="email" placeholder="Hora PM" id="correo" name="correo" required>
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="614 --- -- --" id="telefono" name="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Comentarios extras: " name="mensaje"></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>C.Ramirez Calderon #1605</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Todos los días, ¡hora feliz!              
+                    8:00 PM / 10:00 PM 
+                </p>
+                <p>614 354 0713</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Domingo-Martes-Miercoles --> 1:00 PM/11:00 PM</p>
+                <p>Jueves y Sabados --> 1:00 PM / 12:00 PM</p>
+                <p>Viernes --> 3:00 PM / 12:00PM </p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>suscribete para recibir más noticias</p>
+                <p>10% de descuento por etiquetarnos!!!</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Red Brick lugar donde hay sazon, cerveza y risas</p>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script>src="https://kit.fontawesome.com/81581fb069.js"</script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+</body>
+
+
+
